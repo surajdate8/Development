@@ -8,15 +8,15 @@ import org.springframework.stereotype.Component;
 @Component
 @Scope(value = "prototype")
 public class Alien {
-	
+
 	private int aid;
 	private int aname;
 	private String tech;
-	
+
 	@Autowired
 	@Qualifier("Lap1")
 	private Laptop laptop;
-	
+
 	public Laptop getLaptop() {
 		return laptop;
 	}
@@ -28,13 +28,13 @@ public class Alien {
 	public Alien() {
 		System.out.println("Object created for Alien class");
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Alien [aid=" + aid + ", aname=" + aname + ", tech=" + tech + "]";
 	}
 
-	
+
 	public int getAid() {
 		return aid;
 	}
@@ -53,7 +53,7 @@ public class Alien {
 	public void setTech(String tech) {
 		this.tech = tech;
 	}
-	
+
 	public void show() {
 		System.out.println("In show method of Alien");
 		laptop.compile();
