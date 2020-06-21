@@ -3,13 +3,17 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.facebook.pages.LoginPage">
+      <class name="com.project.selenium.WebElementsExample">
         <methods>
-          <include name="testDOB"/>
-          <include name="afterClass"/>
+          <include name="TC_ID"/>
+          <include name="TC_Name"/>
+          <include name="TC_Partial_Link_Text"/>
           <include name="beforeClass"/>
+          <include name="TC_LinkText"/>
+          <include name="TC_Xpath"/>
+          <include name="TC_Class"/>
         </methods>
-      </class> <!-- com.facebook.pages.LoginPage -->
+      </class> <!-- com.project.selenium.WebElementsExample -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
