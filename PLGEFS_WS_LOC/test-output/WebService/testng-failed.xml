@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [WebService]">
+  <test name="Test(failed)">
+    <classes>
+      <class name="scenarios.LOC.LocTypePost">
+        <methods>
+          <include name="endReportSuite"/>
+          <include name="startReport"/>
+          <include name="startRepo"/>
+          <include name="endReport"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- scenarios.LOC.LocTypePost -->
+      <class name="scenarios.LOC.RelationshipTypePut">
+        <methods>
+          <include name="startRepo"/>
+          <include name="before"/>
+          <include name="startReport"/>
+          <include name="TC_17"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- scenarios.LOC.RelationshipTypePut -->
+      <class name="scenarios.LOC.StatusTypeGet">
+        <methods>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="before"/>
+          <include name="startRepo"/>
+        </methods>
+      </class> <!-- scenarios.LOC.StatusTypeGet -->
+      <class name="scenarios.LOC.LocTypePut">
+        <methods>
+          <include name="before"/>
+          <include name="startReport"/>
+          <include name="startRepo"/>
+          <include name="endReport"/>
+        </methods>
+      </class> <!-- scenarios.LOC.LocTypePut -->
+      <class name="scenarios.LOC.OperToOperPut">
+        <methods>
+          <include name="TC_05"/>
+          <include name="TC_07"/>
+          <include name="startReport"/>
+          <include name="TC_01"/>
+          <include name="TC_12"/>
+          <include name="endReport"/>
+          <include name="startRepo"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- scenarios.LOC.OperToOperPut -->
+      <class name="scenarios.LOC.OperationTypePut">
+        <methods>
+          <include name="TC_18"/>
+          <include name="TC_05"/>
+          <include name="TC_17"/>
+          <include name="TC_03"/>
+          <include name="startReport"/>
+          <include name="TC_15"/>
+          <include name="TC_01"/>
+          <include name="endReport"/>
+          <include name="before"/>
+          <include name="TC_09"/>
+          <include name="startRepo"/>
+        </methods>
+      </class> <!-- scenarios.LOC.OperationTypePut -->
+      <class name="scenarios.LOC.PropertyTypePut">
+        <methods>
+          <include name="startReport"/>
+          <include name="startRepo"/>
+          <include name="before"/>
+          <include name="TC_06"/>
+          <include name="endReport"/>
+          <include name="TC_07"/>
+          <include name="TC_01"/>
+          <include name="TC_13"/>
+        </methods>
+      </class> <!-- scenarios.LOC.PropertyTypePut -->
+      <class name="scenarios.LOC.RelationshipTypePost">
+        <methods>
+          <include name="startReport"/>
+          <include name="before"/>
+          <include name="endReport"/>
+          <include name="endReportSuite"/>
+          <include name="startRepo"/>
+        </methods>
+      </class> <!-- scenarios.LOC.RelationshipTypePost -->
+      <class name="scenarios.LOC.StatusTypePost">
+        <methods>
+          <include name="endReportSuite"/>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="startRepo"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- scenarios.LOC.StatusTypePost -->
+      <class name="scenarios.LOC.AddressTypePut">
+        <methods>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="before"/>
+          <include name="startRepo"/>
+        </methods>
+      </class> <!-- scenarios.LOC.AddressTypePut -->
+      <class name="scenarios.LOC.OperationTypePost">
+        <methods>
+          <include name="startReport"/>
+          <include name="startRepo"/>
+          <include name="endReport"/>
+          <include name="before"/>
+          <include name="endReportSuite"/>
+        </methods>
+      </class> <!-- scenarios.LOC.OperationTypePost -->
+      <class name="scenarios.LOC.OperToOperPost">
+        <methods>
+          <include name="startRepo"/>
+          <include name="startReport"/>
+          <include name="endReport"/>
+          <include name="endReportSuite"/>
+          <include name="before"/>
+        </methods>
+      </class> <!-- scenarios.LOC.OperToOperPost -->
+      <class name="scenarios.LOC.PropertyTypePost">
+        <methods>
+          <include name="startReport"/>
+          <include name="before"/>
+          <include name="endReportSuite"/>
+          <include name="endReport"/>
+          <include name="startRepo"/>
+        </methods>
+      </class> <!-- scenarios.LOC.PropertyTypePost -->
+      <class name="scenarios.LOC.AddressTypePost">
+        <methods>
+          <include name="startReport"/>
+          <include name="endReportAfterSuite"/>
+          <include name="endReport"/>
+          <include name="before"/>
+          <include name="startRepo"/>
+        </methods>
+      </class> <!-- scenarios.LOC.AddressTypePost -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [WebService] -->
