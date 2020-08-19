@@ -3,16 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.zinrelo.scanarios.Print">
+      <class name="com.zinrelo.scanarios.AddingMemberPageTest3">
         <methods>
+          <include name="dummy"/>
+          <include name="startRepo"/>
           <include name="BeforeSuite"/>
           <include name="endReport"/>
-          <include name="startRepo"/>
           <include name="startReport"/>
+          <include name="TC_01"/>
           <include name="TC_03"/>
           <include name="BeforeTest"/>
         </methods>
-      </class> <!-- com.zinrelo.scanarios.Print -->
+      </class> <!-- com.zinrelo.scanarios.AddingMemberPageTest3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

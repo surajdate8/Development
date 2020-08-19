@@ -2,6 +2,7 @@ package com.zinrelo.pages;
 
 public class Login_Page {
 	static String password,forgetYourPassword,signUp,login,email,alertMSG;
+	
 
 	public Login_Page() {
 		password="//*[@id='id_password']";

@@ -12,7 +12,56 @@ public class Prop_Read {
 	File file;
 	FileInputStream fileInput;
 	Properties prop;
-	static String dir,uri,userId,passWord;
+	static String dir,uri,userId,passWord,indexPageUrl,membersTab;
+	static String email,firstName,lastName,id;
+	
+	public static String getEmail() {
+		return email;
+	}
+
+	public static void setEmail(String email) {
+		Prop_Read.email = email;
+	}
+
+	public static String getFirstName() {
+		return firstName;
+	}
+
+	public static void setFirstName(String firstName) {
+		Prop_Read.firstName = firstName;
+	}
+
+	public static String getLastName() {
+		return lastName;
+	}
+
+	public static void setLastName(String lastName) {
+		Prop_Read.lastName = lastName;
+	}
+
+	public static String getId() {
+		return id;
+	}
+
+	public static void setId(String id) {
+		Prop_Read.id = id;
+	}
+
+	public static String getmembersTab() {
+		return membersTab;
+	}
+
+	public void setmembersTab(String membersTab) {
+		Prop_Read.membersTab = membersTab;
+	}
+	
+	public static String getindexPageUrl() {
+		return indexPageUrl;
+	}
+
+	public void setindexPageUrl(String indexPageUrl) {
+		Prop_Read.indexPageUrl = indexPageUrl;
+	}
 	
 	public static String getDir() {
 		return dir;
@@ -48,15 +97,18 @@ public class Prop_Read {
 
 	public Prop_Read() throws IOException {
 		dir=System.getProperty("user.dir");
-		file = new File(dir+"/src/test/resources/Properties/Config.properties");
+		file = new File(dir+"/src/main/resources/Properties/Config.properties");
 		fileInput = new FileInputStream(file);
 		prop = new Properties();
 		prop.load(fileInput);
 		uri= prop.getProperty("uri");
 		userId= prop.getProperty("user_id");
 		passWord= prop.getProperty("password");
-		
+		membersTab=prop.getProperty("membersTab");
+		indexPageUrl=prop.getProperty("indexPageUrl");
+		email=prop.getProperty("email");
+		firstName=prop.getProperty("firstName");
+		lastName=prop.getProperty("lastName");
+		id=prop.getProperty("id");
 	}
-
-
 }
