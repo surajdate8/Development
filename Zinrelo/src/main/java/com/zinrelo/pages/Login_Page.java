@@ -3,18 +3,8 @@ package com.zinrelo.pages;
 public class Login_Page {
 	static String password,forgetYourPassword,signUp,login,email,alertMSG;
 	
-
-	public Login_Page() {
-		password="//*[@id='id_password']";
-		forgetYourPassword="//*[@id='id_reset_password_email']";
-		signUp="//*[@id='id_redirect_signup']";
-		login="//*[@id='id_login_button']";
-		email="//*[@id='id_email']";
-		alertMSG="//*[@id='alert_msg']";
-	}
-	
 	public static String getalertMSG() {
-		return alertMSG;
+		return "//*[@id='alert_msg']";
 	}
 
 	public static void setalertMSG(String alertMSG) {
@@ -22,7 +12,7 @@ public class Login_Page {
 	}
 	
 	public static String getPassword() {
-		return password;
+		return "//*[@id='id_password']";
 	}
 
 	public static void setPassword(String password) {
@@ -30,7 +20,7 @@ public class Login_Page {
 	}
 
 	public static String getForgetYourPassword() {
-		return forgetYourPassword;
+		return "//*[@id='id_reset_password_email']";
 	}
 
 	public static void setForgetYourPassword(String forgetYourPassword) {
@@ -38,7 +28,7 @@ public class Login_Page {
 	}
 
 	public static String getSignUp() {
-		return signUp;
+		return "//*[@id='id_redirect_signup']";
 	}
 
 	public static void setSignUp(String signUp) {
@@ -46,7 +36,7 @@ public class Login_Page {
 	}
 
 	public static String getLogin() {
-		return login;
+		return "//*[@id='id_login_button']";
 	}
 
 	public static void setLogin(String login) {
@@ -54,19 +44,10 @@ public class Login_Page {
 	}
 
 	public static String getEmail() {
-		return email;
+		return "//*[@id='id_email']";
 	}
 
 	public static void setEmail(String email) {
 		Login_Page.email = email;
 	}
-	
-	public void show() {
-		System.out.println(email);
-		System.out.println(login);
-		System.out.println(email);
-		System.out.println(email);
-		System.out.println(email);
-	}
-
 }

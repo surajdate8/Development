@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -28,13 +29,13 @@ public class EndToEndTest4 extends ExtentReport {
 	String dir;
 	static WebDriver driver;
 
-	@SuppressWarnings("unused")
 	@BeforeSuite
 	public void BeforeSuite() throws IOException {
 		Prop_Read prop=new Prop_Read();
-		Login_Page login=new Login_Page();
-		Member_Page mem=new Member_Page();
-		Index_Page id=new Index_Page();
+	}
+	//@AfterSuite
+	public void AfterSuite() {
+		driver.close();
 	}
 
 	@BeforeTest
@@ -101,12 +102,12 @@ public class EndToEndTest4 extends ExtentReport {
 		}
 	}
 
-	//@Test
+	@Test
 	public void TC_03() throws IOException, InterruptedException {
 		test.log(Status.INFO,
 				MarkupHelper.createLabel(
 						"Adding new member into active member list",ExtentColor.PURPLE));
-		driver.findElement(By.xpath(Member_Page.add_new_member)).click();
+		driver.findElement(By.xpath(Member_Page.getadd_new_member())).click();
 		Thread.sleep(2000);
 		boolean framePresent=driver.findElement(By.xpath(Member_Page.getaddMemberTabframe())).isDisplayed();
 		if(framePresent) {
@@ -115,7 +116,7 @@ public class EndToEndTest4 extends ExtentReport {
 			driver.findElement(By.xpath(Member_Page.getFrameFirstName())).sendKeys(Prop_Read.getFirstName());
 			driver.findElement(By.xpath(Member_Page.getFrameLastName())).sendKeys(Prop_Read.getLastName());
 			driver.findElement(By.xpath(Member_Page.getFrameID())).sendKeys(Prop_Read.getId());
-			driver.findElement(By.xpath(Member_Page.frameAddButton)).click();
+			driver.findElement(By.xpath(Member_Page.getframeAddButton())).click();
 			Thread.sleep(2000);
 			boolean nestedframePresent=driver.findElement(By.xpath(Member_Page.getnestedFrameId())).isDisplayed();
 			if(nestedframePresent) {

@@ -6,9 +6,18 @@ public class Member_Page {
 	public static String frameEmail,frameFirstName,frameLastName,frameID,frameAddButton;
 	public static String nestedFrameId,nestedFrameOk,nestedFrameAlertMsg;
 	public static String addedName,addedEmail;
+	public static String closeButton;
 	
+	public static String getcloseButton() {
+		return "//button[@id='modal_close']";
+	}
+
+	public static void closeButton(String closeButton) {
+		Member_Page.closeButton = closeButton;
+	}
+
 	public static String getAddedName() {
-		return addedName;
+		return "//div[@id='customer_list'] /div/table/tbody/tr[1]/td[2]/a";
 	}
 
 	public static void setAddedName(String addedName) {
@@ -16,7 +25,7 @@ public class Member_Page {
 	}
 
 	public static String getAddedEmail() {
-		return addedEmail;
+		return "//div[@id='customer_list'] /div/table/tbody/tr[1]/td[2]/span";
 	}
 
 	public static void setAddedEmail(String addedEmail) {
@@ -24,7 +33,7 @@ public class Member_Page {
 	}
 
 	public static String getnestedFrameAlertMsg() {
-		return nestedFrameAlertMsg;
+		return "//div[@id='enroll_alert_box']/span";
 	}
 
 	public static void setnestedFrameAlertMsg(String nestedFrameAlertMsg) {
@@ -32,7 +41,7 @@ public class Member_Page {
 	}
 	
 	public static String getnestedFrameOk() {
-		return nestedFrameOk;
+		return "//a[@id='enroll_user_success']";
 	}
 
 	public static void setnestedFrameOk(String nestedFrameOk) {
@@ -40,7 +49,7 @@ public class Member_Page {
 	}
 	
 	public static String getframeAddButton() {
-		return frameAddButton;
+		return "//*[@id='enroll_user_proceed']";
 	}
 
 	public static void setframenestedFrameId(String nestedFrameId) {
@@ -48,21 +57,13 @@ public class Member_Page {
 	}
 	
 	public static String getnestedFrameId() {
-		return nestedFrameId;
+		return "//div[@id='enroll_user_modal'] //div[@class='modal-dialog'] //div[@class='modal-content']";
 	}
 
 	public static void setframeAddButton(String frameAddButton) {
 		Member_Page.frameAddButton = frameAddButton;
 	}
 	
-	public static String getAdd_new_member() {
-		return add_new_member;
-	}
-
-	public static void setAdd_new_member(String add_new_member) {
-		Member_Page.add_new_member = add_new_member;
-	}
-
 	public static String getAddMemberTabframe() {
 		return addMemberTabframe;
 	}
@@ -72,7 +73,7 @@ public class Member_Page {
 	}
 
 	public static String getFrameEmail() {
-		return frameEmail;
+		return "//*[@id='user_email']";
 	}
 
 	public static void setFrameEmail(String frameEmail) {
@@ -80,7 +81,7 @@ public class Member_Page {
 	}
 
 	public static String getFrameFirstName() {
-		return frameFirstName;
+		return "//*[@id='first_name']";
 	}
 
 	public static void setFrameFirstName(String frameFirstName) {
@@ -88,7 +89,7 @@ public class Member_Page {
 	}
 
 	public static String getFrameLastName() {
-		return frameLastName;
+		return "//*[@id='last_name']";
 	}
 
 	public static void setFrameLastName(String frameLastName) {
@@ -96,7 +97,7 @@ public class Member_Page {
 	}
 
 	public static String getFrameID() {
-		return frameID;
+		return "//*[@id='merchant_user_id']";
 	}
 
 	public static void setFrameID(String frameID) {
@@ -104,7 +105,7 @@ public class Member_Page {
 	}
 
 	public static String getaddMemberTabframe() {
-		return addMemberTabframe;
+		return "//*[@id='enroll_user_modal']/div";
 	}
 
 	public static void setaddMemberTabframe(String addMemberTabframe) {
@@ -112,28 +113,10 @@ public class Member_Page {
 	}
 	
 	public static String getadd_new_member() {
-		return add_new_member;
+		return "//*[@id='add_new_member']";
 	}
 
 	public static void setadd_new_member(String add_new_member) {
 		Member_Page.add_new_member = add_new_member;
 	}
-
-	public Member_Page(){
-		add_new_member="//*[@id='add_new_member']";
-		addMemberTabframe="//*[@id='enroll_user_modal']/div";
-		frameEmail="//*[@id='user_email']";
-		frameFirstName="//*[@id='first_name']";
-		frameLastName="//*[@id='last_name']";
-		frameID="//*[@id='merchant_user_id']";
-		frameAddButton="//*[@id='enroll_user_proceed']";
-		nestedFrameId="//div[@id='enroll_user_modal'] //div[@class='modal-dialog'] //div[@class='modal-content']";
-		nestedFrameOk="//a[@id='enroll_user_success']";
-		nestedFrameAlertMsg="//div[@id='enroll_alert_box']/span";
-		addedName="//div[@id='customer_list'] /div/table/tbody/tr[1]/td[2]/a";
-		addedEmail="//div[@id='customer_list'] /div/table/tbody/tr[1]/td[2]/span";
-	}
-	
-	
-
 }

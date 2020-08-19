@@ -42,8 +42,6 @@ public class ExtentReport{
 		htmlReporter.config().setDocumentTitle(fileName);
 		htmlReporter.config().setReportName("Report");
 		return;
-		
-		
 	}
 
 	@AfterClass

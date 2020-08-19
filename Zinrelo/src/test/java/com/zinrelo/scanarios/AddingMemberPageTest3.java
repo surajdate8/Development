@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -24,10 +25,14 @@ public class AddingMemberPageTest3 extends ExtentReport {
 	String dir;
 	WebDriver driver;
 
-	@SuppressWarnings("unused")
 	@BeforeSuite
 	public void BeforeSuite() throws IOException {
 		Prop_Read prop=new Prop_Read();
+	}
+	
+	@AfterSuite
+	public void AfterSuite() {
+		driver.close();
 	}
 
 	@BeforeTest

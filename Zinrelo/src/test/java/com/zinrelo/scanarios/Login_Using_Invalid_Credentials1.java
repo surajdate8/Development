@@ -30,7 +30,6 @@ public class Login_Using_Invalid_Credentials1 extends ExtentReport {
 
 	@BeforeSuite
 	public void BeforeSuite() throws IOException {
-		@SuppressWarnings("unused")
 		Prop_Read prop=new Prop_Read();
 	}
 	

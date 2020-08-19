@@ -27,7 +27,6 @@ public class Launching_To_Index_Page_Test2 extends ExtentReport {
 
 	@BeforeSuite
 	public void BeforeSuite() throws IOException {
-		@SuppressWarnings("unused")
 		Prop_Read prop=new Prop_Read();
 	}
 	

@@ -5,7 +5,7 @@ public class Index_Page {
 	static String ZinreloText ,MembersButton;
 	
 	public static String getZinreloText() {
-		return ZinreloText;
+		return "//a[@id='store_center']";
 	}
 
 	public static void setZinreloText(String zinreloText) {
@@ -13,15 +13,11 @@ public class Index_Page {
 	}
 
 	public static String getMembersButton() {
-		return MembersButton;
+		return "//a[@id='customers_tab']";
 	}
 
 	public static void setMembersButton(String membersButton) {
 		MembersButton = membersButton;
 	}
 
-	public Index_Page() {
-		ZinreloText ="//a[@id='store_center']";
-		MembersButton="//a[@id='customers_tab']";
-	}
 }
