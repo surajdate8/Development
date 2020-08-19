@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -23,7 +24,7 @@ import com.zinrelo.pages.Login_Page;
 import com.zinrelo.utils.ExtentReport;
 import com.zinrelo.utils.Prop_Read;
 
-public class Login_Using_Invalid_Credentials extends ExtentReport {
+public class Login_Using_Invalid_Credentials1 extends ExtentReport {
 	String dir;
 	WebDriver driver;
 
@@ -31,8 +32,11 @@ public class Login_Using_Invalid_Credentials extends ExtentReport {
 	public void BeforeSuite() throws IOException {
 		@SuppressWarnings("unused")
 		Prop_Read prop=new Prop_Read();
-		@SuppressWarnings("unused")
-		Login_Page login=new Login_Page();
+	}
+	
+	@AfterSuite
+	public void AfterSuite() {
+		driver.close();
 	}
 
 	@BeforeTest
@@ -42,11 +46,6 @@ public class Login_Using_Invalid_Credentials extends ExtentReport {
 		driver=new ChromeDriver();
 		driver.get(Prop_Read.getUri());	
 		
-	}
-
-	@BeforeClass
-	public void BeforeClass() {
-
 	}
 
 	@BeforeMethod
@@ -67,6 +66,8 @@ public class Login_Using_Invalid_Credentials extends ExtentReport {
 						ExtentColor.PURPLE));
 		driver.findElement(By.xpath(Login_Page.getEmail())).sendKeys("InvalidUserId");
 		driver.findElement(By.xpath(Login_Page.getPassword())).sendKeys(Prop_Read.getPassWord());
+		test.info("Credentials entered sucessfully...");
+		test.info("Email is : InvalidUserId and Password is : "+Prop_Read.getPassWord());
 		driver.findElement(By.xpath(Login_Page.getLogin())).click();
 		String curretURL=driver.getCurrentUrl();
 		String text=driver.findElement(By.xpath(Login_Page.getalertMSG())).getText();
@@ -101,6 +102,8 @@ public class Login_Using_Invalid_Credentials extends ExtentReport {
 		driver.findElement(By.xpath(Login_Page.getEmail())).sendKeys(Prop_Read.getUserId());
 		driver.findElement(By.xpath(Login_Page.getPassword())).sendKeys("InvalidPassword");
 		driver.findElement(By.xpath(Login_Page.getLogin())).click();
+		test.info("Credentials entered sucessfully...");
+		test.info("Email is : "+Prop_Read.getUserId()+" and Password is : InvalidPassword");
 		String curretURL=driver.getCurrentUrl();
 		String text=driver.findElement(By.xpath(Login_Page.getalertMSG())).getText();
 		if(curretURL.equals(Prop_Read.getUri())) {
@@ -120,6 +123,5 @@ public class Login_Using_Invalid_Credentials extends ExtentReport {
 			test.log(Status.FAIL, MarkupHelper.createLabel("test status : FAIL", ExtentColor.RED));
 			Assert.fail("Test Failed");
 		}
-
 	}
 }

@@ -8,6 +8,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
@@ -20,7 +21,7 @@ import com.zinrelo.pages.Login_Page;
 import com.zinrelo.utils.ExtentReport;
 import com.zinrelo.utils.Prop_Read;
 
-public class Launching_To_Index_Page_Test extends ExtentReport {
+public class Launching_To_Index_Page_Test2 extends ExtentReport {
 	String dir,testCaseID;
 	static WebDriver driver;
 
@@ -28,9 +29,11 @@ public class Launching_To_Index_Page_Test extends ExtentReport {
 	public void BeforeSuite() throws IOException {
 		@SuppressWarnings("unused")
 		Prop_Read prop=new Prop_Read();
-		@SuppressWarnings("unused")
-		Login_Page login=new Login_Page();
-		Index_Page id=new Index_Page();
+	}
+	
+	@AfterSuite
+	public void AfterSuite() {
+		driver.quit();
 	}
 
 	@BeforeTest
@@ -40,12 +43,6 @@ public class Launching_To_Index_Page_Test extends ExtentReport {
 		driver=new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(Prop_Read.getUri());	
-
-	}
-
-	@BeforeClass
-	public void BeforeClass() {
-
 	}
 
 	@BeforeMethod

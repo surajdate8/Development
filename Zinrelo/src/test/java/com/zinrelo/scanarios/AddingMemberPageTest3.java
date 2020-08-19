@@ -1,21 +1,16 @@
 package com.zinrelo.scanarios;
 
-import java.io.BufferedReader;
 import java.io.IOException;
 import java.lang.reflect.Method;
 import java.util.concurrent.TimeUnit;
-
-import org.junit.BeforeClass;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
@@ -33,9 +28,6 @@ public class AddingMemberPageTest3 extends ExtentReport {
 	@BeforeSuite
 	public void BeforeSuite() throws IOException {
 		Prop_Read prop=new Prop_Read();
-		Login_Page login=new Login_Page();
-		Member_Page mem=new Member_Page();
-		Index_Page id=new Index_Page();
 	}
 
 	@BeforeTest
@@ -48,12 +40,6 @@ public class AddingMemberPageTest3 extends ExtentReport {
 		driver.findElement(By.xpath(Login_Page.getEmail())).sendKeys(Prop_Read.getUserId());
 		driver.findElement(By.xpath(Login_Page.getPassword())).sendKeys(Prop_Read.getPassWord());
 		driver.findElement(By.xpath(Login_Page.getLogin())).click();
-
-	}
-
-	@BeforeClass
-	public void BeforeClass() throws IOException, InterruptedException {
-
 	}
 
 	@BeforeMethod
@@ -82,12 +68,12 @@ public class AddingMemberPageTest3 extends ExtentReport {
 		}
 	}
 
-	//@Test
+	@Test
 	public void TC_02() throws IOException, InterruptedException {
 		test.log(Status.INFO,
 				MarkupHelper.createLabel(
 						"Adding new member into active member list",ExtentColor.PURPLE));
-		driver.findElement(By.xpath(Member_Page.add_new_member)).click();
+		driver.findElement(By.xpath(Member_Page.getadd_new_member())).click();
 		Thread.sleep(2000);
 		boolean framePresent=driver.findElement(By.xpath(Member_Page.getaddMemberTabframe())).isDisplayed();
 		if(framePresent) {
@@ -96,7 +82,7 @@ public class AddingMemberPageTest3 extends ExtentReport {
 			driver.findElement(By.xpath(Member_Page.getFrameFirstName())).sendKeys(Prop_Read.getFirstName());
 			driver.findElement(By.xpath(Member_Page.getFrameLastName())).sendKeys(Prop_Read.getLastName());
 			driver.findElement(By.xpath(Member_Page.getFrameID())).sendKeys(Prop_Read.getId());
-			driver.findElement(By.xpath(Member_Page.frameAddButton)).click();
+			driver.findElement(By.xpath(Member_Page.getframeAddButton())).click();
 			Thread.sleep(2000);
 			boolean nestedframePresent=driver.findElement(By.xpath(Member_Page.getnestedFrameId())).isDisplayed();
 			if(nestedframePresent) {
@@ -112,18 +98,15 @@ public class AddingMemberPageTest3 extends ExtentReport {
 			test.fail("Frame not available for adding member");
 			test.log(Status.FAIL, MarkupHelper.createLabel("Test status : FAIL", ExtentColor.RED));
 			Assert.fail("Test Failed");
-
 		}
-
 	}
 
-	@SuppressWarnings("unused")
-	//@Test
+	@Test
 	public void TC_03() throws IOException, InterruptedException {
 		test.log(Status.INFO,
 				MarkupHelper.createLabel(
 						"verify that member already exist message come when same member is added",ExtentColor.PURPLE));
-		driver.findElement(By.xpath(Member_Page.add_new_member)).click();
+		driver.findElement(By.xpath(Member_Page.getadd_new_member())).click();
 		Thread.sleep(2000);
 		boolean framePresent=driver.findElement(By.xpath(Member_Page.getaddMemberTabframe())).isDisplayed();
 		if(framePresent) {
@@ -132,13 +115,14 @@ public class AddingMemberPageTest3 extends ExtentReport {
 			driver.findElement(By.xpath(Member_Page.getFrameFirstName())).sendKeys(Prop_Read.getFirstName());
 			driver.findElement(By.xpath(Member_Page.getFrameLastName())).sendKeys(Prop_Read.getLastName());
 			driver.findElement(By.xpath(Member_Page.getFrameID())).sendKeys(Prop_Read.getId());
-			driver.findElement(By.xpath(Member_Page.frameAddButton)).click();
+			driver.findElement(By.xpath(Member_Page.getframeAddButton())).click();
 			Thread.sleep(2000);
 			boolean nestedframePresent=driver.findElement(By.xpath(Member_Page.getnestedFrameId())).isDisplayed();
 			String alertMsg=driver.findElement(By.xpath(Member_Page.getnestedFrameAlertMsg())).getText();
 			if(nestedframePresent&&alertMsg.equalsIgnoreCase("Member already exists.")) {
 				test.info("verification for already existed memeber sucessfull");
 				test.log(Status.PASS, MarkupHelper.createLabel("test status : SUCCESS", ExtentColor.GREEN));
+				driver.findElement(By.xpath(Member_Page.getcloseButton())).click();
 			}else {
 				test.fail("verification for already existed memeber failed");
 				test.log(Status.FAIL, MarkupHelper.createLabel("Test status : FAIL", ExtentColor.RED));
@@ -148,12 +132,10 @@ public class AddingMemberPageTest3 extends ExtentReport {
 			test.fail("Frame not available for adding member");
 			test.log(Status.FAIL, MarkupHelper.createLabel("Test status : FAIL", ExtentColor.RED));
 			Assert.fail("Test Failed");
-	
 		}
-	
+		
 	}
 
-	@SuppressWarnings("unused")
 	@Test
 	public void TC_04() throws IOException, InterruptedException {
 		test.log(Status.INFO,
@@ -161,7 +143,6 @@ public class AddingMemberPageTest3 extends ExtentReport {
 						"verify added user is available or not present in member list",ExtentColor.PURPLE));
 		driver.findElement(By.xpath(Index_Page.getMembersButton())).click();
 		Thread.sleep(2000);
-		
 		String[] Name=driver.findElement(By.xpath(Member_Page.getAddedName())).getText().split(" ", 2);
 		String EmailId=driver.findElement(By.xpath(Member_Page.getAddedEmail())).getText();
 		String firstName=Name[0];
@@ -176,7 +157,5 @@ public class AddingMemberPageTest3 extends ExtentReport {
 			test.log(Status.FAIL, MarkupHelper.createLabel("Test status : FAIL", ExtentColor.RED));
 			Assert.fail("Test Failed");
 		}
-		
 	}
-	
 }
