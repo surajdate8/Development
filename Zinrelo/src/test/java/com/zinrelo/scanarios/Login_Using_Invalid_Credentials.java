@@ -3,6 +3,7 @@ package com.zinrelo.scanarios;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.lang.reflect.Method;
+import java.util.concurrent.TimeUnit;
 
 import org.junit.BeforeClass;
 import org.openqa.selenium.By;
@@ -17,11 +18,12 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
+import com.zinrelo.pages.Index_Page;
 import com.zinrelo.pages.Login_Page;
 import com.zinrelo.utils.ExtentReport;
 import com.zinrelo.utils.Prop_Read;
 
-public class Print extends ExtentReport {
+public class Login_Using_Invalid_Credentials extends ExtentReport {
 	String dir;
 	WebDriver driver;
 
@@ -38,7 +40,8 @@ public class Print extends ExtentReport {
 		dir=Prop_Read.getDir();
 		System.setProperty("webdriver.chrome.driver", dir+"/src/test/resources/Driver/chromedriver.exe");
 		driver=new ChromeDriver();
-		driver.get(Prop_Read.getUri());		
+		driver.get(Prop_Read.getUri());	
+		
 	}
 
 	@BeforeClass
@@ -48,14 +51,15 @@ public class Print extends ExtentReport {
 
 	@BeforeMethod
 	protected void startRepo(Method m) throws IOException {
-		driver.findElement(By.xpath(Login_Page.getEmail())).clear();
-		driver.findElement(By.xpath(Login_Page.getPassword())).clear();
 		String testCaseName = m.getName();
 		test = extent.createTest(testCaseName);
+		driver.findElement(By.xpath(Login_Page.getEmail())).clear();
+		driver.findElement(By.xpath(Login_Page.getPassword())).clear();
 	}
 
 	@Test
 	public void TC_01() {
+		
 		test.log(Status.INFO,
 				MarkupHelper.createLabel(
 						"Verify that the error message is displays when invalid Email is passed",
@@ -78,11 +82,10 @@ public class Print extends ExtentReport {
 				Assert.fail("Test Failed");
 			}
 		}else {
-			test.fail("Comparison input URI and Current URI is found correct");
+			test.fail("Comparison input URI and Current URI is found incorrect");
 			test.log(Status.FAIL, MarkupHelper.createLabel("test status : FAIL", ExtentColor.RED));
 			Assert.fail("Test Failed");
 		}
-
 	}
 
 
@@ -110,7 +113,7 @@ public class Print extends ExtentReport {
 				Assert.fail("Test Failed");
 			}
 		}else {
-			test.fail("Comparison input URI and Current URI is found correct");
+			test.fail("Comparison input URI and Current URI is found incorrect");
 			test.log(Status.FAIL, MarkupHelper.createLabel("test status : FAIL", ExtentColor.RED));
 			Assert.fail("Test Failed");
 		}
