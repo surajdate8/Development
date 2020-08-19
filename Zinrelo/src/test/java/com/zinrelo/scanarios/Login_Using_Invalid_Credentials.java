@@ -59,7 +59,8 @@ public class Login_Using_Invalid_Credentials extends ExtentReport {
 
 	@Test
 	public void TC_01() {
-		
+		String testCaseID = new Object() {
+		}.getClass().getEnclosingMethod().getName();
 		test.log(Status.INFO,
 				MarkupHelper.createLabel(
 						"Verify that the error message is displays when invalid Email is passed",
@@ -91,6 +92,8 @@ public class Login_Using_Invalid_Credentials extends ExtentReport {
 
 	@Test
 	public void TC_02() throws IOException {
+		String testCaseID = new Object() {
+		}.getClass().getEnclosingMethod().getName();
 		test.log(Status.INFO,
 				MarkupHelper.createLabel(
 						"Verify that the error message is displays when invalid Password is passed",
