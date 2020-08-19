@@ -6,7 +6,7 @@
       <class name="com.zinrelo.scanarios.Login_Using_Invalid_Credentials1"/>
       <class name="com.zinrelo.scanarios.Launching_To_Index_Page_Test2"/>
       <class name="com.zinrelo.scanarios.AddingMemberPageTest3"/>
-      <class name="com.zinrelo.scanarios.EndToEndTest4"/>
+      <!-- <class name="com.zinrelo.scanarios.EndToEndTest4"/> -->
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -33,7 +33,7 @@ public class EndToEndTest4 extends ExtentReport {
 	public void BeforeSuite() throws IOException {
 		Prop_Read prop=new Prop_Read();
 	}
-	//@AfterSuite
+	@AfterSuite
 	public void AfterSuite() {
 		driver.close();
 	}
@@ -135,7 +135,6 @@ public class EndToEndTest4 extends ExtentReport {
 		}
 	}
 
-	@SuppressWarnings("unused")
 	@Test
 	public void TC_04() throws IOException, InterruptedException {
 		test.log(Status.INFO,
