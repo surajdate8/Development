@@ -1,25 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="2" ignored="0" total="8" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40788" started-at="2020-08-19T17:40:44 IST" finished-at="2020-08-19T17:41:25 IST">
+  <suite name="Suite" duration-ms="110155" started-at="2020-08-19T18:42:35 IST" finished-at="2020-08-19T18:44:25 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40788" started-at="2020-08-19T17:40:44 IST" finished-at="2020-08-19T17:41:25 IST">
-      <class name="com.zinrelo.scanarios.EndToEndTest4">
-        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@2c039ac6]" name="BeforeSuite" is-config="true" duration-ms="17" started-at="2020-08-19T17:40:44 IST" finished-at="2020-08-19T17:40:44 IST">
+    <test name="Test" duration-ms="110155" started-at="2020-08-19T18:42:35 IST" finished-at="2020-08-19T18:44:25 IST">
+      <class name="com.zinrelo.scanarios.Launching_To_Index_Page_Test2">
+        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:com.zinrelo.scanarios.Launching_To_Index_Page_Test2@38bc8ab5]" name="BeforeSuite" is-config="true" duration-ms="1" started-at="2020-08-19T18:42:35 IST" finished-at="2020-08-19T18:42:35 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeSuite -->
-        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@2c039ac6]" name="BeforeTest" is-config="true" duration-ms="12791" started-at="2020-08-19T17:40:44 IST" finished-at="2020-08-19T17:40:57 IST">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:com.zinrelo.scanarios.Launching_To_Index_Page_Test2@38bc8ab5]" name="BeforeTest" is-config="true" duration-ms="13394" started-at="2020-08-19T18:43:03 IST" finished-at="2020-08-19T18:43:16 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BeforeTest -->
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@2c039ac6]" name="startReport" is-config="true" duration-ms="282" started-at="2020-08-19T17:40:57 IST" finished-at="2020-08-19T17:40:57 IST">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.zinrelo.scanarios.Launching_To_Index_Page_Test2@38bc8ab5]" name="startReport" is-config="true" duration-ms="2" started-at="2020-08-19T18:43:33 IST" finished-at="2020-08-19T18:43:33 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="startRepo(java.lang.reflect.Method)[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@2c039ac6]" name="startRepo" is-config="true" duration-ms="30" started-at="2020-08-19T17:40:57 IST" finished-at="2020-08-19T17:40:57 IST">
+        <test-method status="PASS" signature="TC_01()[pri:0, instance:com.zinrelo.scanarios.Launching_To_Index_Page_Test2@38bc8ab5]" name="TC_01" duration-ms="9997" started-at="2020-08-19T18:43:33 IST" finished-at="2020-08-19T18:43:43 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01 -->
+        <test-method status="PASS" signature="startRepo(java.lang.reflect.Method)[pri:0, instance:com.zinrelo.scanarios.Launching_To_Index_Page_Test2@38bc8ab5]" name="startRepo" is-config="true" duration-ms="0" started-at="2020-08-19T18:43:33 IST" finished-at="2020-08-19T18:43:33 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void com.zinrelo.scanarios.Launching_To_Index_Page_Test2.TC_01() throws java.io.IOException,java.lang.InterruptedException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startRepo -->
+        <test-method status="PASS" signature="startRepo(java.lang.reflect.Method)[pri:0, instance:com.zinrelo.scanarios.Launching_To_Index_Page_Test2@38bc8ab5]" name="startRepo" is-config="true" duration-ms="1" started-at="2020-08-19T18:43:43 IST" finished-at="2020-08-19T18:43:43 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zinrelo.scanarios.Launching_To_Index_Page_Test2.TC_02() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startRepo -->
+        <test-method status="PASS" signature="TC_02()[pri:0, instance:com.zinrelo.scanarios.Launching_To_Index_Page_Test2@38bc8ab5]" name="TC_02" duration-ms="385" started-at="2020-08-19T18:43:43 IST" finished-at="2020-08-19T18:43:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02 -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.zinrelo.scanarios.Launching_To_Index_Page_Test2@38bc8ab5]" name="endReport" is-config="true" duration-ms="348" started-at="2020-08-19T18:43:44 IST" finished-at="2020-08-19T18:43:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="AfterSuite()[pri:0, instance:com.zinrelo.scanarios.Launching_To_Index_Page_Test2@38bc8ab5]" name="AfterSuite" is-config="true" duration-ms="796" started-at="2020-08-19T18:44:26 IST" finished-at="2020-08-19T18:44:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuite -->
+      </class> <!-- com.zinrelo.scanarios.Launching_To_Index_Page_Test2 -->
+      <class name="com.zinrelo.scanarios.Login_Using_Invalid_Credentials1">
+        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:com.zinrelo.scanarios.Login_Using_Invalid_Credentials1@6b9651f3]" name="BeforeSuite" is-config="true" duration-ms="1" started-at="2020-08-19T18:42:35 IST" finished-at="2020-08-19T18:42:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:com.zinrelo.scanarios.Login_Using_Invalid_Credentials1@6b9651f3]" name="BeforeTest" is-config="true" duration-ms="12249" started-at="2020-08-19T18:43:16 IST" finished-at="2020-08-19T18:43:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.zinrelo.scanarios.Login_Using_Invalid_Credentials1@6b9651f3]" name="startReport" is-config="true" duration-ms="705" started-at="2020-08-19T18:43:28 IST" finished-at="2020-08-19T18:43:29 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="startRepo(java.lang.reflect.Method)[pri:0, instance:com.zinrelo.scanarios.Login_Using_Invalid_Credentials1@6b9651f3]" name="startRepo" is-config="true" duration-ms="447" started-at="2020-08-19T18:43:29 IST" finished-at="2020-08-19T18:43:30 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zinrelo.scanarios.Login_Using_Invalid_Credentials1.TC_01()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startRepo -->
+        <test-method status="PASS" signature="TC_01()[pri:0, instance:com.zinrelo.scanarios.Login_Using_Invalid_Credentials1@6b9651f3]" name="TC_01" duration-ms="1473" started-at="2020-08-19T18:43:30 IST" finished-at="2020-08-19T18:43:31 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01 -->
+        <test-method status="PASS" signature="startRepo(java.lang.reflect.Method)[pri:0, instance:com.zinrelo.scanarios.Login_Using_Invalid_Credentials1@6b9651f3]" name="startRepo" is-config="true" duration-ms="148" started-at="2020-08-19T18:43:31 IST" finished-at="2020-08-19T18:43:31 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.zinrelo.scanarios.Login_Using_Invalid_Credentials1.TC_02() throws java.io.IOException]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startRepo -->
+        <test-method status="PASS" signature="TC_02()[pri:0, instance:com.zinrelo.scanarios.Login_Using_Invalid_Credentials1@6b9651f3]" name="TC_02" duration-ms="572" started-at="2020-08-19T18:43:31 IST" finished-at="2020-08-19T18:43:32 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02 -->
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.zinrelo.scanarios.Login_Using_Invalid_Credentials1@6b9651f3]" name="endReport" is-config="true" duration-ms="1672" started-at="2020-08-19T18:43:32 IST" finished-at="2020-08-19T18:43:33 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="AfterSuite()[pri:0, instance:com.zinrelo.scanarios.Login_Using_Invalid_Credentials1@6b9651f3]" name="AfterSuite" is-config="true" duration-ms="382" started-at="2020-08-19T18:44:26 IST" finished-at="2020-08-19T18:44:27 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuite -->
+      </class> <!-- com.zinrelo.scanarios.Login_Using_Invalid_Credentials1 -->
+      <class name="com.zinrelo.scanarios.EndToEndTest4">
+        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@687080dc]" name="BeforeSuite" is-config="true" duration-ms="37" started-at="2020-08-19T18:42:35 IST" finished-at="2020-08-19T18:42:35 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@687080dc]" name="BeforeTest" is-config="true" duration-ms="27968" started-at="2020-08-19T18:42:35 IST" finished-at="2020-08-19T18:43:03 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@687080dc]" name="startReport" is-config="true" duration-ms="14" started-at="2020-08-19T18:43:44 IST" finished-at="2020-08-19T18:43:44 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startReport -->
+        <test-method status="PASS" signature="startRepo(java.lang.reflect.Method)[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@687080dc]" name="startRepo" is-config="true" duration-ms="32" started-at="2020-08-19T18:43:44 IST" finished-at="2020-08-19T18:43:44 IST">
           <params>
             <param index="0">
               <value>
@@ -30,11 +134,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startRepo -->
-        <test-method status="PASS" signature="TC_01()[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@2c039ac6]" name="TC_01" duration-ms="5764" started-at="2020-08-19T17:40:57 IST" finished-at="2020-08-19T17:41:03 IST">
+        <test-method status="PASS" signature="TC_01()[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@687080dc]" name="TC_01" duration-ms="8823" started-at="2020-08-19T18:43:44 IST" finished-at="2020-08-19T18:43:53 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-        <test-method status="PASS" signature="startRepo(java.lang.reflect.Method)[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@2c039ac6]" name="startRepo" is-config="true" duration-ms="10" started-at="2020-08-19T17:41:03 IST" finished-at="2020-08-19T17:41:03 IST">
+        <test-method status="PASS" signature="startRepo(java.lang.reflect.Method)[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@687080dc]" name="startRepo" is-config="true" duration-ms="10" started-at="2020-08-19T18:43:53 IST" finished-at="2020-08-19T18:43:53 IST">
           <params>
             <param index="0">
               <value>
@@ -45,11 +149,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startRepo -->
-        <test-method status="PASS" signature="TC_02()[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@2c039ac6]" name="TC_02" duration-ms="10930" started-at="2020-08-19T17:41:03 IST" finished-at="2020-08-19T17:41:14 IST">
+        <test-method status="PASS" signature="TC_02()[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@687080dc]" name="TC_02" duration-ms="13981" started-at="2020-08-19T18:43:53 IST" finished-at="2020-08-19T18:44:07 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_02 -->
-        <test-method status="PASS" signature="startRepo(java.lang.reflect.Method)[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@2c039ac6]" name="startRepo" is-config="true" duration-ms="7" started-at="2020-08-19T17:41:14 IST" finished-at="2020-08-19T17:41:14 IST">
+        <test-method status="PASS" signature="startRepo(java.lang.reflect.Method)[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@687080dc]" name="startRepo" is-config="true" duration-ms="13" started-at="2020-08-19T18:44:07 IST" finished-at="2020-08-19T18:44:07 IST">
           <params>
             <param index="0">
               <value>
@@ -60,11 +164,73 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startRepo -->
-        <test-method status="PASS" signature="TC_03()[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@2c039ac6]" name="TC_03" duration-ms="6951" started-at="2020-08-19T17:41:14 IST" finished-at="2020-08-19T17:41:21 IST">
+        <test-method status="FAIL" signature="TC_03()[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@687080dc]" name="TC_03" duration-ms="16408" started-at="2020-08-19T18:44:07 IST" finished-at="2020-08-19T18:44:24 IST">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
+            <message>
+              <![CDATA[element not interactable
+  (Session info: chrome=84.0.4147.125)
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-N6C6OOV', ip: '192.168.43.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\91738\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64826}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7961657cad2601d743b98f28cf8c5aeb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=84.0.4147.125)
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-N6C6OOV', ip: '192.168.43.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\91738\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64826}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7961657cad2601d743b98f28cf8c5aeb
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:316)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+at com.zinrelo.scanarios.EndToEndTest4.TC_03(EndToEndTest4.java:124)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_03 -->
-        <test-method status="PASS" signature="startRepo(java.lang.reflect.Method)[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@2c039ac6]" name="startRepo" is-config="true" duration-ms="8" started-at="2020-08-19T17:41:21 IST" finished-at="2020-08-19T17:41:21 IST">
+        <test-method status="PASS" signature="startRepo(java.lang.reflect.Method)[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@687080dc]" name="startRepo" is-config="true" duration-ms="7" started-at="2020-08-19T18:44:24 IST" finished-at="2020-08-19T18:44:24 IST">
           <params>
             <param index="0">
               <value>
@@ -75,15 +241,81 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startRepo -->
-        <test-method status="PASS" signature="TC_04()[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@2c039ac6]" name="TC_04" duration-ms="3335" started-at="2020-08-19T17:41:21 IST" finished-at="2020-08-19T17:41:24 IST">
+        <test-method status="FAIL" signature="TC_04()[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@687080dc]" name="TC_04" duration-ms="1162" started-at="2020-08-19T18:44:24 IST" finished-at="2020-08-19T18:44:25 IST">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a href="/store/zinreloteststore1/customers" class="menu-label label_font_color selected_page" style="cursor: pointer;" id="customers_tab">...</a> is not clickable at point (54, 192). Other element would receive the click: <div id="enroll_user_modal" class="modal fade in" tabindex="-1" role="dialog" aria-hidden="false" style="display: block; padding-right: 17px;">...</div>
+  (Session info: chrome=84.0.4147.125)
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-N6C6OOV', ip: '192.168.43.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\91738\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64826}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7961657cad2601d743b98f28cf8c5aeb]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a href="/store/zinreloteststore1/customers" class="menu-label label_font_color selected_page" style="cursor: pointer;" id="customers_tab">...</a> is not clickable at point (54, 192). Other element would receive the click: <div id="enroll_user_modal" class="modal fade in" tabindex="-1" role="dialog" aria-hidden="false" style="display: block; padding-right: 17px;">...</div>
+  (Session info: chrome=84.0.4147.125)
+Build info: version: '4.0.0-alpha-6', revision: '5f43a29cfc'
+System info: host: 'DESKTOP-N6C6OOV', ip: '192.168.43.83', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 84.0.4147.125, chrome: {chromedriverVersion: 84.0.4147.30 (48b3e868b4cc0..., userDataDir: C:\Users\91738\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:64826}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7961657cad2601d743b98f28cf8c5aeb
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:160)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:582)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:316)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:85)
+at com.zinrelo.scanarios.EndToEndTest4.TC_04(EndToEndTest4.java:143)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_04 -->
-        <test-method status="PASS" signature="endReport()[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@2c039ac6]" name="endReport" is-config="true" duration-ms="605" started-at="2020-08-19T17:41:24 IST" finished-at="2020-08-19T17:41:25 IST">
+        <test-method status="PASS" signature="endReport()[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@687080dc]" name="endReport" is-config="true" duration-ms="140" started-at="2020-08-19T18:44:25 IST" finished-at="2020-08-19T18:44:25 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
+        <test-method status="PASS" signature="AfterSuite()[pri:0, instance:com.zinrelo.scanarios.EndToEndTest4@687080dc]" name="AfterSuite" is-config="true" duration-ms="655" started-at="2020-08-19T18:44:25 IST" finished-at="2020-08-19T18:44:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuite -->
       </class> <!-- com.zinrelo.scanarios.EndToEndTest4 -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

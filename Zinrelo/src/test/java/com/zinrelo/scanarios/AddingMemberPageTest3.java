@@ -54,7 +54,7 @@ public class AddingMemberPageTest3 extends ExtentReport {
 		test = extent.createTest(testCaseName);
 	}
 
-	@Test
+	@Test(priority = 1)
 	public void TC_01() throws IOException, InterruptedException {
 		test.log(Status.INFO,
 				MarkupHelper.createLabel("Verify that the Member option is available for use",ExtentColor.PURPLE));
@@ -73,7 +73,7 @@ public class AddingMemberPageTest3 extends ExtentReport {
 		}
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void TC_02() throws IOException, InterruptedException {
 		test.log(Status.INFO,
 				MarkupHelper.createLabel(
@@ -106,7 +106,7 @@ public class AddingMemberPageTest3 extends ExtentReport {
 		}
 	}
 
-	@Test
+	@Test(priority = 3)
 	public void TC_03() throws IOException, InterruptedException {
 		test.log(Status.INFO,
 				MarkupHelper.createLabel(

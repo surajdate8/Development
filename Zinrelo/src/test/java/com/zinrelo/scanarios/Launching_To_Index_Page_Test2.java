@@ -32,7 +32,7 @@ public class Launching_To_Index_Page_Test2 extends ExtentReport {
 	
 	@AfterSuite
 	public void AfterSuite() {
-		driver.quit();
+		driver.close();
 	}
 
 	@BeforeTest
