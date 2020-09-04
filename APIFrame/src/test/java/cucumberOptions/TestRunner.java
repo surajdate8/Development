@@ -11,8 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 						"junit:target/JunitReports/Report.xml",
 						"json:target/JsonReports/Report.json",
 						"json:target/jsonReports/cucumber-report.json"},
-		glue="stepDefination"
-		//tags ="@DeletePlace"
+		glue="stepDefination",
+		tags="@Regression"
 		)
 public class TestRunner {
 	
