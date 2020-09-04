@@ -1,7 +1,7 @@
 package stepDefination;
 import io.cucumber.java.en.*;
 
-public class stepDefination {
+public class StepDefination {
 
 	@Given("User is on netbanking landing page")
 	public void user_is_on_netbanking_landing_page() {

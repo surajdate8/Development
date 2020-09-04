@@ -1,5 +1,6 @@
 Feature: REST
 
+@AddPlace
 Scenario Outline: Verify if Place is being Succesfully added using AddPlaceAPI
 	Given Add Place Payload  with "<name>" "<language>" "<address>"
 	When user calls "addPlaceAPI" with "POST" http request
@@ -13,6 +14,7 @@ Examples:
 	|AAhouse|English	|WTC		|
 	|BBHouse|French		|EDC		|
 	
+@DeletePlace	
 Scenario: Verify if Delete Place functionality working successfully 
 	Given DeletePlace payload
 	When user calls "deletePlaceAPI" with "POST" http request

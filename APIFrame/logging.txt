@@ -12,11 +12,11 @@ Multiparts:		<none>
 Body:
 {
     "accuracy": 50,
-    "name": "AAhouse",
+    "name": "Suraj",
     "phone_number": "8888888888",
-    "address": "WTC",
+    "address": "Akola",
     "website": "www.google.com",
-    "language": "English",
+    "language": "Marathi",
     "location": {
         "lat": -34.0,
         "lng": -38.0
@@ -27,7 +27,7 @@ Body:
     ]
 }
 HTTP/1.1 200 OK
-Date: Fri, 04 Sep 2020 09:52:34 GMT
+Date: Fri, 04 Sep 2020 11:52:20 GMT
 Server: Apache/2.4.18 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,17 +40,17 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "afa8214a1498cd3f95ee9d8b1058a655",
+    "place_id": "c53cf4cb0d65bc6926becf36cc4aa88a",
     "scope": "APP",
-    "reference": "fdbee3f8e0292b973a67017685b7540efdbee3f8e0292b973a67017685b7540e",
-    "id": "fdbee3f8e0292b973a67017685b7540e"
+    "reference": "9021bbe93152015b392114119af88abd9021bbe93152015b392114119af88abd",
+    "id": "9021bbe93152015b392114119af88abd"
 }
 Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=afa8214a1498cd3f95ee9d8b1058a655
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=c53cf4cb0d65bc6926becf36cc4aa88a
 Proxy:			<none>
 Request params:	<none>
 Query params:	key=qaclick123
-				place_id=afa8214a1498cd3f95ee9d8b1058a655
+				place_id=c53cf4cb0d65bc6926becf36cc4aa88a
 Form params:	<none>
 Path params:	<none>
 Headers:		Accept=*/*
@@ -59,7 +59,7 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:			<none>
 HTTP/1.1 200 OK
-Date: Fri, 04 Sep 2020 09:52:37 GMT
+Date: Fri, 04 Sep 2020 11:52:22 GMT
 Server: Apache/2.4.18 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -76,97 +76,12 @@ Content-Type: application/json;charset=UTF-8
         "longitude": "-38"
     },
     "accuracy": "50",
-    "name": "AAhouse",
+    "name": "Suraj",
     "phone_number": "8888888888",
-    "address": "WTC",
+    "address": "Akola",
     "types": "shoe park,shop",
     "website": "www.google.com",
-    "language": "English"
-}
-Request method:	POST
-Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
-Proxy:			<none>
-Request params:	<none>
-Query params:	key=qaclick123
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "accuracy": 50,
-    "name": "BBHouse",
-    "phone_number": "8888888888",
-    "address": "EDC",
-    "website": "www.google.com",
-    "language": "French",
-    "location": {
-        "lat": -34.0,
-        "lng": -38.0
-    },
-    "types": [
-        "shoe park",
-        "shop"
-    ]
-}
-HTTP/1.1 200 OK
-Date: Fri, 04 Sep 2020 09:52:39 GMT
-Server: Apache/2.4.18 (Ubuntu)
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: POST
-Access-Control-Max-Age: 3600
-Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-Content-Length: 194
-Keep-Alive: timeout=5, max=100
-Connection: Keep-Alive
-Content-Type: application/json;charset=UTF-8
-
-{
-    "status": "OK",
-    "place_id": "b70bb4206c3c71538311f6d94f51a0b7",
-    "scope": "APP",
-    "reference": "4658645f0bfd2c3eabfe2178fcac32264658645f0bfd2c3eabfe2178fcac3226",
-    "id": "4658645f0bfd2c3eabfe2178fcac3226"
-}
-Request method:	GET
-Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=b70bb4206c3c71538311f6d94f51a0b7
-Proxy:			<none>
-Request params:	<none>
-Query params:	key=qaclick123
-				place_id=b70bb4206c3c71538311f6d94f51a0b7
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Date: Fri, 04 Sep 2020 09:52:40 GMT
-Server: Apache/2.4.18 (Ubuntu)
-Access-Control-Allow-Origin: *
-Access-Control-Allow-Methods: POST
-Access-Control-Max-Age: 3600
-Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
-Content-Length: 198
-Keep-Alive: timeout=5, max=100
-Connection: Keep-Alive
-Content-Type: application/json;charset=UTF-8
-
-{
-    "location": {
-        "latitude": "-34",
-        "longitude": "-38"
-    },
-    "accuracy": "50",
-    "name": "BBHouse",
-    "phone_number": "8888888888",
-    "address": "EDC",
-    "types": "shoe park,shop",
-    "website": "www.google.com",
-    "language": "French"
+    "language": "Marathi"
 }
 Request method:	POST
 Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
@@ -181,10 +96,10 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "place_id": "b70bb4206c3c71538311f6d94f51a0b7"
+    "place_id": "c53cf4cb0d65bc6926becf36cc4aa88a"
 }
 HTTP/1.1 200 OK
-Date: Fri, 04 Sep 2020 09:52:41 GMT
+Date: Fri, 04 Sep 2020 11:52:24 GMT
 Server: Apache/2.4.18 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
