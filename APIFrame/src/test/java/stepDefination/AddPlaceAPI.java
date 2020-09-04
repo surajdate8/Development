@@ -38,15 +38,20 @@ public class AddPlaceAPI extends Utils{
 	}
 
 	@When("user calls {string} with {string} http request")
-	public void user_calls_with_http_request(String resource, String string2) {
+	public void user_calls_with_http_request(String resource, String method) {
 		resspec =new ResponseSpecBuilder()
 				.expectStatusCode(200)
 				.expectContentType(ContentType.JSON).build();
 
 		APIResoures URI=APIResoures.valueOf(resource);
-		response=(Response) res
-				.when().post(URI.getResource())
-				.then().log().all().spec (resspec).extract().response();
+
+		if(method.equalsIgnoreCase("POST")) 
+			response=res.when().post(URI.getResource());
+		else if(method.equalsIgnoreCase("GET"))
+			response=res.when().get(URI.getResource());
+		else if(method.equalsIgnoreCase("DELETE"))
+			response=res.when().delete(URI.getResource());
+
 	}
 
 	@Then("the API call got success with status code {int}")
