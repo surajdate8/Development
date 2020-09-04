@@ -38,13 +38,14 @@ public class AddPlaceAPI extends Utils{
 	}
 
 	@When("user calls {string} with {string} http request")
-	public void user_calls_with_http_request(String string, String string2) {
+	public void user_calls_with_http_request(String resource, String string2) {
 		resspec =new ResponseSpecBuilder()
 				.expectStatusCode(200)
 				.expectContentType(ContentType.JSON).build();
 
+		APIResoures URI=APIResoures.valueOf(resource);
 		response=(Response) res
-				.when().post("/maps/api/place/add/json")
+				.when().post(URI.getResource())
 				.then().log().all().spec (resspec).extract().response();
 	}
 
