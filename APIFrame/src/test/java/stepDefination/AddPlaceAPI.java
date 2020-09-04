@@ -2,17 +2,10 @@ package stepDefination;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
-
-import java.io.FileNotFoundException;
 import java.io.IOException;
-
-import javax.rmi.CORBA.Util;
-
 import io.cucumber.java.en.*;
-import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
 import io.restassured.http.ContentType;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
@@ -24,7 +17,7 @@ public class AddPlaceAPI extends Utils{
 	ResponseSpecification resspec;
 	RequestSpecification res;
 	Response response;
-	String placeId;
+	static String placeId;
 
 	TestDataBuilder data=new TestDataBuilder();
 
@@ -76,6 +69,16 @@ public class AddPlaceAPI extends Utils{
 		String actualName=getJsonPath(response, "name");
 		assertEquals(expectedName,actualName);
 	}
+	
+	@Given("DeletePlace payload")
+	public void delete_place_payload() throws IOException {
+
+		res=given().spec(Utils.requestSpecification())
+		.body(data.deletePlacePayload(placeId));
+		
+	}
+
+
 
 
 }

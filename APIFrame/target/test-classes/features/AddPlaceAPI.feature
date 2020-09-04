@@ -1,6 +1,6 @@
 Feature: REST
 
-	Scenario Outline: Verify if Place is being Succesfully added using AddPlaceAPI
+Scenario Outline: Verify if Place is being Succesfully added using AddPlaceAPI
 	Given Add Place Payload  with "<name>" "<language>" "<address>"
 	When user calls "addPlaceAPI" with "POST" http request
 	Then the API call got success with status code 200
@@ -12,3 +12,10 @@ Examples:
 	|name	|language	|address	|
 	|AAhouse|English	|WTC		|
 	|BBHouse|French		|EDC		|
+	
+Scenario: Verify if Delete Place functionality working successfully 
+	Given DeletePlace payload
+	When user calls "deletePlaceAPI" with "POST" http request
+	Then the API call got success with status code 200
+	And "status" in response body is "OK"
+	
