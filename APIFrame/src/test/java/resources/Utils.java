@@ -9,6 +9,8 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
+import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
 public class Utils {
@@ -16,6 +18,7 @@ public class Utils {
 	public static RequestSpecification req;
 	static String dir=System.getProperty("user.dir");
 	static String baseUrl;
+	JsonPath js;
 
 	public static RequestSpecification requestSpecification() throws IOException {
 
@@ -37,4 +40,10 @@ public class Utils {
 		prop.load(file);
 		return prop.getProperty(key);
 	}
+	public String getJsonPath(Response response,String key) {
+		js=new JsonPath(response.asString());
+		return js.get(key).toString();
+		
+	}
+
 }

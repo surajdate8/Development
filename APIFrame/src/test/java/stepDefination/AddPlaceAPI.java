@@ -24,7 +24,7 @@ public class AddPlaceAPI extends Utils{
 	ResponseSpecification resspec;
 	RequestSpecification res;
 	Response response;
-	JsonPath js;
+	String placeId;
 
 	TestDataBuilder data=new TestDataBuilder();
 
@@ -32,8 +32,7 @@ public class AddPlaceAPI extends Utils{
 	public void add_place_payload_with(String name, String language, String address) throws IOException 
 	{	
 		System.out.println("Started");
-		res=given().log().all()
-				.spec(Utils.requestSpecification())
+		res=given().spec(Utils.requestSpecification())
 				.body(data.addPlacePayload(name,language,address));
 	}
 
@@ -51,7 +50,6 @@ public class AddPlaceAPI extends Utils{
 			response=res.when().get(URI.getResource());
 		else if(method.equalsIgnoreCase("DELETE"))
 			response=res.when().delete(URI.getResource());
-
 	}
 
 	@Then("the API call got success with status code {int}")
@@ -60,15 +58,23 @@ public class AddPlaceAPI extends Utils{
 	}
 
 	@Then("{string} in response body is {string}")
-	public void in_response_body_is(String string, String string2) {
-		js=new JsonPath(response.asString());
-		assertEquals(js.get(string), string2);
+	public void in_response_body_is(String keyValue, String expectedValue) {
+		
+		assertEquals(getJsonPath(response, keyValue),expectedValue);
 	}
 
 	@Then("{string} in response body iss {string}")
-	public void in_response_body_iss(String string, String string2) {
-		assertEquals(js.get(string), string2);
+	public void in_response_body_iss(String keyValue, String expectedValue) {
+		assertEquals(getJsonPath(response, keyValue),expectedValue);
 		System.out.println("Done");
+	}
+	@Then("verify place_id created maps to {string} using {string}")
+	public void verify_place_id_created_maps_to_using(String expectedName, String resourse) throws IOException {
+		placeId=getJsonPath(response, "place_id");
+		res=given().spec(Utils.requestSpecification()).queryParam("place_id",placeId);
+		user_calls_with_http_request(resourse, "GET");		
+		String actualName=getJsonPath(response, "name");
+		assertEquals(expectedName,actualName);
 	}
 
 

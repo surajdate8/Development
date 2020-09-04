@@ -27,7 +27,7 @@ Body:
     ]
 }
 HTTP/1.1 200 OK
-Date: Fri, 04 Sep 2020 07:51:10 GMT
+Date: Fri, 04 Sep 2020 08:50:46 GMT
 Server: Apache/2.4.18 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -40,10 +40,48 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "c6d33a8a408491acbb3c18ac13764b5a",
+    "place_id": "9bf362878644f34167e37afbc7e09dca",
     "scope": "APP",
-    "reference": "79b65e940ef6e1f03ec7e78c75fa8b0c79b65e940ef6e1f03ec7e78c75fa8b0c",
-    "id": "79b65e940ef6e1f03ec7e78c75fa8b0c"
+    "reference": "e2c9c4f6d81cd791a1320a9411cd69ece2c9c4f6d81cd791a1320a9411cd69ec",
+    "id": "e2c9c4f6d81cd791a1320a9411cd69ec"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=9bf362878644f34167e37afbc7e09dca
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=9bf362878644f34167e37afbc7e09dca
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 04 Sep 2020 08:50:48 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 199
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-34",
+        "longitude": "-38"
+    },
+    "accuracy": "50",
+    "name": "AAhouse",
+    "phone_number": "8888888888",
+    "address": "WTC",
+    "types": "shoe park,shop",
+    "website": "www.google.com",
+    "language": "English"
 }
 Request method:	POST
 Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
@@ -74,7 +112,7 @@ Body:
     ]
 }
 HTTP/1.1 200 OK
-Date: Fri, 04 Sep 2020 07:51:15 GMT
+Date: Fri, 04 Sep 2020 08:50:50 GMT
 Server: Apache/2.4.18 (Ubuntu)
 Access-Control-Allow-Origin: *
 Access-Control-Allow-Methods: POST
@@ -87,8 +125,46 @@ Content-Type: application/json;charset=UTF-8
 
 {
     "status": "OK",
-    "place_id": "3eccddf571615bc85c0c3b08b6a51deb",
+    "place_id": "1df83c3ecea3035da65eeb734570e5f6",
     "scope": "APP",
-    "reference": "4c1c0db7b441e37b0d10548f385745ce4c1c0db7b441e37b0d10548f385745ce",
-    "id": "4c1c0db7b441e37b0d10548f385745ce"
+    "reference": "7a70004764cc1ee4bc704af0daa2d2297a70004764cc1ee4bc704af0daa2d229",
+    "id": "7a70004764cc1ee4bc704af0daa2d229"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=1df83c3ecea3035da65eeb734570e5f6
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=1df83c3ecea3035da65eeb734570e5f6
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Fri, 04 Sep 2020 08:50:51 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 198
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-34",
+        "longitude": "-38"
+    },
+    "accuracy": "50",
+    "name": "BBHouse",
+    "phone_number": "8888888888",
+    "address": "EDC",
+    "types": "shoe park,shop",
+    "website": "www.google.com",
+    "language": "French"
 }
