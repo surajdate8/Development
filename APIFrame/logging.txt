@@ -1,0 +1,47 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accuracy": 50,
+    "name": "Rahul",
+    "phone_number": "8888888888",
+    "address": "29, side layout, cohen 09",
+    "website": "www.google.com",
+    "language": "Marathi",
+    "location": {
+        "lat": -34.0,
+        "lng": -38.0
+    },
+    "types": [
+        "shoe park",
+        "shop"
+    ]
+}
+HTTP/1.1 200 OK
+Date: Fri, 04 Sep 2020 05:02:48 GMT
+Server: Apache/2.4.18 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "d3cf0f7c730bbe039999c55502556d69",
+    "scope": "APP",
+    "reference": "039e5f0c1e28dd4626c6aae72a7e5c86039e5f0c1e28dd4626c6aae72a7e5c86",
+    "id": "039e5f0c1e28dd4626c6aae72a7e5c86"
+}
