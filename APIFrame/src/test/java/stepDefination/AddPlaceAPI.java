@@ -3,7 +3,7 @@ package stepDefination;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
-import java.util.ArrayList;
+import javax.rmi.CORBA.Util;
 
 import io.cucumber.java.en.*;
 import io.restassured.builder.RequestSpecBuilder;
@@ -13,48 +13,30 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
-import pojo.*;
+import resources.*;
 
-public class AddPlaceAPI {
+public class AddPlaceAPI extends Utils{
 
-	RequestSpecification req;
+	
 	ResponseSpecification resspec;
 	RequestSpecification res;
 	Response response;
 	JsonPath js;
+	
+	TestDataBuilder data=new TestDataBuilder();
 
 	@Given("Add Place Payload")
 	public void add_place_payload() {
 		System.out.println("Started");
 
-		AddPlace p=new AddPlace();
-		p.setAccuracy(50);
-		p.setAddress("29, side layout, cohen 09");
-		p.setLanguage("Marathi");
-		p.setPhone_number("8888888888");
-		p.setWebsite("www.google.com");
-		p.setName("Rahul");
-
-		ArrayList<String> myList=new ArrayList<String>();
-		myList.add("shoe park");
-		myList.add("shop");
-		p.setTypes(myList);
-
-		Location l=new Location();
-		l.setLat(-34.00);
-		l.setLng(-38.00);
-		p.setLocation(l);
-
-		req=new RequestSpecBuilder()
-				.setBaseUri("https://rahulshettyacademy.com")
-				.addQueryParam("key", "qaclick123")
-				.setContentType(ContentType.JSON).build();
+	
+		
 
 		resspec= new ResponseSpecBuilder()
 				.expectStatusCode(200)
 				.expectContentType(ContentType.JSON).build();
 
-		res=given().log().all().spec(req).body(p);
+		res=given().log().all().spec(Utils.requestSpecification()).body(data.addPlacePayload());
 
 
 	}
