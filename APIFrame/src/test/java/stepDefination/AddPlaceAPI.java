@@ -4,6 +4,7 @@ import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 
 import java.io.FileNotFoundException;
+import java.io.IOException;
 
 import javax.rmi.CORBA.Util;
 
@@ -28,7 +29,7 @@ public class AddPlaceAPI extends Utils{
 	TestDataBuilder data=new TestDataBuilder();
 
 	@Given("Add Place Payload")
-	public void add_place_payload() throws FileNotFoundException {
+	public void add_place_payload() throws IOException {
 		System.out.println("Started");
 		res=given().log().all()
 				.spec(Utils.requestSpecification())
