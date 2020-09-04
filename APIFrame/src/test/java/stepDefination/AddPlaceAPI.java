@@ -20,20 +20,21 @@ import resources.*;
 
 public class AddPlaceAPI extends Utils{
 
-	
+
 	ResponseSpecification resspec;
 	RequestSpecification res;
 	Response response;
 	JsonPath js;
-	
+
 	TestDataBuilder data=new TestDataBuilder();
 
-	@Given("Add Place Payload")
-	public void add_place_payload() throws IOException {
+	@Given("Add Place Payload  with {string} {string} {string}")
+	public void add_place_payload_with(String name, String language, String address) throws IOException 
+	{	
 		System.out.println("Started");
 		res=given().log().all()
 				.spec(Utils.requestSpecification())
-				.body(data.addPlacePayload());
+				.body(data.addPlacePayload(name,language,address));
 	}
 
 	@When("user calls {string} with {string} http request")
@@ -41,7 +42,7 @@ public class AddPlaceAPI extends Utils{
 		resspec =new ResponseSpecBuilder()
 				.expectStatusCode(200)
 				.expectContentType(ContentType.JSON).build();
-		
+
 		response=(Response) res
 				.when().post("/maps/api/place/add/json")
 				.then().log().all().spec (resspec).extract().response();
