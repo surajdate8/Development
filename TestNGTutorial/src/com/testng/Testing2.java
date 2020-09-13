@@ -33,15 +33,31 @@ public class Testing2 {
 		}.getClass().getEnclosingMethod().getName();
 		System.out.println(testCaseID);	
 	}
-	@Test
+	@Test(dependsOnMethods = {"TC_04"}
+			,enabled = true
+			,timeOut = 4000)
 	public void TC_01() 
 	{
 		String testCaseID = new Object() {
 		}.getClass().getEnclosingMethod().getName();
 		System.out.println(testCaseID);	
 	}
-	@Test
+	@Test(groups = {"smoke","sanity"})
 	public void TC_02() 
+	{
+		String testCaseID = new Object() {
+		}.getClass().getEnclosingMethod().getName();
+		System.out.println(testCaseID);	
+	}
+	@Test(groups = {"sanity"})
+	public void TC_03() 
+	{
+		String testCaseID = new Object() {
+		}.getClass().getEnclosingMethod().getName();
+		System.out.println(testCaseID);	
+	}
+	@Test(groups = {"sanity"})
+	public void TC_04() 
 	{
 		String testCaseID = new Object() {
 		}.getClass().getEnclosingMethod().getName();
@@ -57,6 +73,19 @@ public class Testing2 {
 	
 	@AfterMethod
 	public void AfterMethod() {
+		String testCaseID = new Object() {
+		}.getClass().getEnclosingMethod().getName();
+		System.out.println(testCaseID+name);
+	}
+	@BeforeClass
+	public void BeforeClass() {
+		String testCaseID = new Object() {
+		}.getClass().getEnclosingMethod().getName();
+		System.out.println(testCaseID+name);
+	}
+	
+	@AfterClass
+	public void AfterClass() {
 		String testCaseID = new Object() {
 		}.getClass().getEnclosingMethod().getName();
 		System.out.println(testCaseID+name);
