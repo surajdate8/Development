@@ -1,5 +1,6 @@
 package com.testng;
 
+import org.testng.Assert;
 import org.testng.annotations.*;
 
 public class Testing2 {
@@ -36,11 +37,12 @@ public class Testing2 {
 	@Test(dependsOnMethods = {"TC_04"}
 			,enabled = true
 			,timeOut = 4000)
-	public void TC_01() 
+	@Parameters({"url","url/key"})
+	public void TC_01(String url,String key) 
 	{
 		String testCaseID = new Object() {
 		}.getClass().getEnclosingMethod().getName();
-		System.out.println(testCaseID);	
+		System.out.println(url.toUpperCase()+"\n"+key+"\n"+testCaseID);	
 	}
 	@Test(groups = {"smoke","sanity"})
 	public void TC_02() 
@@ -55,13 +57,16 @@ public class Testing2 {
 		String testCaseID = new Object() {
 		}.getClass().getEnclosingMethod().getName();
 		System.out.println(testCaseID);	
+		//Assert.assertTrue(false);
 	}
-	@Test(groups = {"sanity"})
-	public void TC_04() 
+	@Test(groups = {"sanity"},dataProvider = "getData")
+	public void TC_04(String username,String password) 
 	{
 		String testCaseID = new Object() {
 		}.getClass().getEnclosingMethod().getName();
 		System.out.println(testCaseID);	
+		System.out.println(username+"\t"+password);
+		
 	}
 
 	@BeforeMethod
@@ -89,6 +94,22 @@ public class Testing2 {
 		String testCaseID = new Object() {
 		}.getClass().getEnclosingMethod().getName();
 		System.out.println(testCaseID+name);
+	}
+	
+	@DataProvider
+	public Object[][] getData() {
+		Object[][] data=new Object[3][2];
+		data[0][0]= "suraj";
+		data[0][1]= "suraj123";
+		
+		data[1][0]= "dhiraj";
+		data[1][1]= "dhiraj123";
+
+		data[2][0]= "gajanan";
+		data[2][1]= "gajanan123";
+		
+		return data;
+		
 	}
 	
 }
