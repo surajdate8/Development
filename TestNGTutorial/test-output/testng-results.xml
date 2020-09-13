@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="3" total="8" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Loan Department" duration-ms="163" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+    <groups>
+    </groups>
+    <test name="Personal Loan" duration-ms="102" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+      <class name="com.testng.Testing2">
+        <test-method status="PASS" signature="BeforeTest()[pri:0, instance:com.testng.Testing2@5b87ed94]" name="BeforeTest" is-config="true" duration-ms="2" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeTest -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.testng.Testing2@5b87ed94]" name="BeforeMethod" is-config="true" duration-ms="4" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="TC_01()[pri:0, instance:com.testng.Testing2@5b87ed94]" name="TC_01" duration-ms="4" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01 -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.testng.Testing2@5b87ed94]" name="AfterMethod" is-config="true" duration-ms="3" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.testng.Testing2@5b87ed94]" name="BeforeMethod" is-config="true" duration-ms="2" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="TC_02()[pri:0, instance:com.testng.Testing2@5b87ed94]" name="TC_02" duration-ms="4" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_02 -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.testng.Testing2@5b87ed94]" name="AfterMethod" is-config="true" duration-ms="1" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:com.testng.Testing2@5b87ed94]" name="AfterTest" is-config="true" duration-ms="2" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- com.testng.Testing2 -->
+      <class name="com.testng.Testing">
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.testng.Testing@7fac631b]" name="BeforeMethod" is-config="true" duration-ms="2" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="Demo()[pri:0, instance:com.testng.Testing@7fac631b]" name="Demo" duration-ms="10" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Demo -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.testng.Testing@7fac631b]" name="AfterMethod" is-config="true" duration-ms="3" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+        <test-method status="PASS" signature="BeforeMethod()[pri:0, instance:com.testng.Testing@7fac631b]" name="BeforeMethod" is-config="true" duration-ms="0" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeMethod -->
+        <test-method status="PASS" signature="TC_01()[pri:0, instance:com.testng.Testing@7fac631b]" name="TC_01" duration-ms="1" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01 -->
+        <test-method status="PASS" signature="AfterMethod()[pri:0, instance:com.testng.Testing@7fac631b]" name="AfterMethod" is-config="true" duration-ms="0" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterMethod -->
+      </class> <!-- com.testng.Testing -->
+    </test> <!-- Personal Loan -->
+    <test name="Car Loan" duration-ms="9" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+      <class name="com.testng.Testing2">
+        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:com.testng.Testing2@5b87ed94]" name="BeforeSuite" is-config="true" duration-ms="1" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method status="PASS" signature="AfterSuite()[pri:0, instance:com.testng.Testing2@5b87ed94]" name="AfterSuite" is-config="true" duration-ms="2" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuite -->
+      </class> <!-- com.testng.Testing2 -->
+      <class name="com.testng.Testing3">
+        <test-method status="PASS" signature="TC_11()[pri:0, instance:com.testng.Testing3@67205a84]" name="TC_11" duration-ms="4" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_11 -->
+      </class> <!-- com.testng.Testing3 -->
+      <class name="com.testng.Testing">
+        <test-method status="PASS" signature="BeforeSuite()[pri:0, instance:com.testng.Testing@7fac631b]" name="BeforeSuite" is-config="true" duration-ms="18" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BeforeSuite -->
+        <test-method status="PASS" signature="AfterSuite()[pri:0, instance:com.testng.Testing@7fac631b]" name="AfterSuite" is-config="true" duration-ms="4" started-at="2020-09-13T13:44:58 IST" finished-at="2020-09-13T13:44:58 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterSuite -->
+      </class> <!-- com.testng.Testing -->
+    </test> <!-- Car Loan -->
+  </suite> <!-- Loan Department -->
+</testng-results>
