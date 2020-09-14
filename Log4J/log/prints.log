@@ -1,4 +1,4 @@
 13:40:43.843 [main] DEBUG com.alpha.Demo1 - I am debugging
-13:40:43.848 [main] ERROR com.alpha.Demo1 - Error occured
+13:40:43.848 [main] ERROR com.alpha.Demo1 - Error occure
 13:40:43.848 [main] FATAL com.alpha.Demo1 - Fatal error
 13:40:43.848 [main] INFO  com.alpha.Demo1 - Button is not displayed
