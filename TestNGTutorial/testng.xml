@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Loan Department"  thread-count="5" parallel="tests">
+	<listeners>
+	<listener class-name="com.testng.Listeners"></listener>
+	</listeners>
+
+	<parameter name="url" value="qaclickacademy.com" />
+	<parameter name="url/key" value="surajdate" />
+	
+	<test name="Personal Loan" parallel="classes" thread-count="5">
+		<classes>
+			<class name="com.testng.Testing" />
+			<class name="com.testng.Testing2" />
+		</classes>
+	</test>
+	
+	<test name="Car Loan">
+		<classes>
+			<class name="com.testng.Testing3">
+				<methods>
+					<exclude name="TC_0.*"></exclude>
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> <!-- Suite -->
