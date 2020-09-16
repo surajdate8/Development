@@ -1,17 +1,15 @@
 package FrameWorkBuild.FrameWorkBuild;
-
 import java.io.IOException;
-
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
-
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.*;
 import pageObject.LandingPage;
 import pageObject.LoginPage;
 import resources.Base;
-
 public class HomePage extends Base {
+	public WebDriver driver;
+
 	@BeforeTest
 	public void initilize() throws IOException {
 		driver=initializeDriver();
@@ -27,7 +25,6 @@ public class HomePage extends Base {
 		l.getLogin().click();
 		log.getEmail().sendKeys(email);
 		log.getPass().sendKeys(password);
-		System.out.println(text);
 		log.getSubmit().click();
 	}
 

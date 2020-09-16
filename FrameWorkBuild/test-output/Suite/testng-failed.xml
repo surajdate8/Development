@@ -1,13 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test(failed)">
+  <listeners>
+    <listener class-name="FrameWorkBuild.FrameWorkBuild.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test1(failed)">
+    <classes>
+      <class name="FrameWorkBuild.FrameWorkBuild.ValidateTitle">
+        <methods>
+          <include name="basePageNavigation"/>
+          <include name="afterTest"/>
+          <include name="initilize"/>
+        </methods>
+      </class> <!-- FrameWorkBuild.FrameWorkBuild.ValidateTitle -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
     <classes>
       <class name="FrameWorkBuild.FrameWorkBuild.HomePage">
         <methods>
+          <include name="initilize"/>
+          <include name="afterTest"/>
           <include name="basePageNavigation" invocation-numbers="1"/>
         </methods>
       </class> <!-- FrameWorkBuild.FrameWorkBuild.HomePage -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
