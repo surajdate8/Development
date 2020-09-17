@@ -8,12 +8,13 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
 public class base {
-
+	static String browserName;
 	public  WebDriver driver;
 	public Properties prop;
 	String dir=System.getProperty("user.dir");
@@ -24,24 +25,25 @@ public class base {
 		FileInputStream fis=new FileInputStream(dir+"/src/main/java/resources/data.properties");
 
 		prop.load(fis);
-		String browserName=prop.getProperty("browser");
+		//String browserName=prop.getProperty("browser");
+		browserName=System.getProperty("browser");
 		System.out.println(browserName);
 
 		if(browserName.equals("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver",dir+ "/Driver/chromedriver.exe");
 			driver= new ChromeDriver();
-			//execute in chrome driver
 
 		}
 		else if (browserName.equals("firefox"))
 		{
+			System.setProperty("webdriver.gecko.driver",dir+ "/Driver/geckodriver.exe");
 			driver= new FirefoxDriver();
-			//firefox code
 		}
 		else if (browserName.equals("IE"))
 		{
-			//	IE code
+			System.setProperty("webdriver.ie.driver",dir+ "/Driver/IEDriverServer.exe");
+			driver= new InternetExplorerDriver();
 		}
 
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
