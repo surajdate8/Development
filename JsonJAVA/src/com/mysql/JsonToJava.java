@@ -26,7 +26,7 @@ public class JsonToJava {
 
 		Statement st=con.createStatement();
 		st.executeQuery("use Business;");
-		ResultSet rs=st.executeQuery("select * from CustomerInfo");
+		ResultSet rs=st.executeQuery("select * from CustomerInfo where Location ='Asia' limit 1");
 		CustomerDetails c;
 		while(rs.next()) {
 			c=new CustomerDetails();
@@ -41,7 +41,7 @@ public class JsonToJava {
 		}
 		for(int i=0;i<a.size();i++) {
 			ObjectMapper o=new ObjectMapper();
-			o.writeValue(new File("C:\\Users\\91738\\eclipse-workspace\\JsonJAVA\\JSON\\customerInfo"+i+".json"),a.get(i));
+			o.writeValue(new File(dir+"/JSON/customerInfo"+i+".json"),a.get(i));
 		}
 
 

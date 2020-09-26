@@ -3,6 +3,15 @@ package com.mysql;
 public class CustomerDetails {
 	private String courseName,purchasedDate,location ;
 	int amount;
+	private String studentName;
+
+	public String getStudentName() {
+		return studentName;
+	}
+
+	public void setStudentName(String studentName) {
+		this.studentName = studentName;
+	}
 
 	public String getCourseName() {
 		return courseName;
