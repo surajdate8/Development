@@ -1,16 +1,15 @@
 package stepDefination;
 
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import junit.framework.Assert;
 
+@SuppressWarnings("deprecation")
 public class LoginFreeCRM {
 	WebDriver driver;
 	String dir=System.getProperty("user.dir");
@@ -40,6 +39,8 @@ public class LoginFreeCRM {
 	public void user_will_landed_to_HOME_page() {
 		String title=driver.getTitle();
 		Assert.assertEquals("Cogmento CRM", title);
+		System.out.println(title);
+		System.out.println("completed");
 		driver.quit();
 	}
 

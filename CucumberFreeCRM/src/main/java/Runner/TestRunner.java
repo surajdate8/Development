@@ -8,7 +8,9 @@ import io.cucumber.junit.CucumberOptions;
 //If showing error for RunWith -> go to POM.xml and remove scope from Junit
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src/main/java/features",
-				glue= {"stepDefination"})
+				glue= {"stepDefination"},
+				plugin = {"pretty","html:Report/Test_output_html"}
+				)
 public class TestRunner {
 
 }
