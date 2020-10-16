@@ -24,22 +24,23 @@ public class Explicit_Wait_79 {
 
 		addingIntoCart(driver,itemsNeeded);
 		checkoutItems(driver,w);
-		
+
 
 	}
 
 	private static void checkoutItems(WebDriver driver,WebDriverWait w) {
+			
 		driver.findElement(By.cssSelector("img[alt='Cart']")).click(
-				);;
+				);
 		driver.findElement(By.xpath("//button[text()='PROCEED TO CHECKOUT']")).click();
-		
+
 		w.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input[class='promoCode']")));
 		//w.until(ExpectedConditions.elementToBeClickable(By.xpath("//div[@id='resultsContainer']/section/article[1]")));
-		
+
 		driver.findElement(By.cssSelector("input[class='promoCode']")).sendKeys("rahulshettyacademy");
 		driver.findElement(By.cssSelector("button[class='promoBtn']")).click();
 		w.until(ExpectedConditions.elementToBeClickable(By.cssSelector("span[class='promoInfo']")));
-		
+
 		System.out.println(driver.findElement(By.cssSelector("span[class='promoInfo']")).getText());
 	}
 
@@ -62,7 +63,7 @@ public class Explicit_Wait_79 {
 				}
 			}
 		}
-		
+
 	}
 
 }
